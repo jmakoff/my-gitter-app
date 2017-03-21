@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/Header';
+import Header from './components/Header';
 import './index.css';
+var userName='Guest';
+function change () {
+    userName="wdawdadawd";
+    alert('awdawdad')
+
+}
+setTimeout(change, 122000);
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+  <Header  name={userName}/>,
+  document.getElementById('header')
 );
